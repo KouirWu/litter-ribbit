@@ -4,23 +4,13 @@
 @use "element-plus/theme-chalk/src/container.scss" as *;
 
 // 自定义 Element Plus 主题变量
-$colors: (
-  'primary': (
-    'base': #409eff,
-  ),
-  'success': (
-    'base': #67c23a,
-  ),
-  'warning': (
-    'base': #e6a23c,
-  ),
-  'danger': (
-    'base': #f56c6c,
-  ),
-  'info': (
-    'base': #909399,
-  )
-);
+:root {
+  --el-color-primary: #409eff;
+  --el-color-success: #67c23a;
+  --el-color-warning: #e6a23c;
+  --el-color-danger: #f56c6c;
+  --el-color-info: #909399;
+}
 
 // 自定义 Element Plus 组件样式
 .el-button {
