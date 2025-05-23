@@ -1,3 +1,8 @@
+// 导入 Element Plus 基础样式
+@use "element-plus/theme-chalk/src/base.scss" as *;
+@use "element-plus/theme-chalk/src/button.scss" as *;
+@use "element-plus/theme-chalk/src/container.scss" as *;
+
 // 自定义 Element Plus 主题变量
 $colors: (
   'primary': (
@@ -29,8 +34,3 @@ $colors: (
   padding: 0;
   height: 60px;
 }
-
-// 导入 Element Plus 基础样式
-@use "element-plus/theme-chalk/src/base.scss" as *;
-@use "element-plus/theme-chalk/src/button.scss" as *;
-@use "element-plus/theme-chalk/src/container.scss" as *;
