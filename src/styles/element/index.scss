@@ -1,0 +1,36 @@
+// 自定义 Element Plus 主题变量
+$colors: (
+  'primary': (
+    'base': #409eff,
+  ),
+  'success': (
+    'base': #67c23a,
+  ),
+  'warning': (
+    'base': #e6a23c,
+  ),
+  'danger': (
+    'base': #f56c6c,
+  ),
+  'info': (
+    'base': #909399,
+  )
+);
+
+// 自定义 Element Plus 组件样式
+.el-button {
+  &:hover {
+    background-color: var(--el-color-primary-light-3);
+    border-color: var(--el-color-primary-light-3);
+  }
+}
+
+.el-header {
+  padding: 0;
+  height: 60px;
+}
+
+// 导入 Element Plus 基础样式
+@use "element-plus/theme-chalk/src/base.scss" as *;
+@use "element-plus/theme-chalk/src/button.scss" as *;
+@use "element-plus/theme-chalk/src/container.scss" as *;
